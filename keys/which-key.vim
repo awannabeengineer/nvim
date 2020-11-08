@@ -57,10 +57,12 @@ let g:which_key_map.a = {
       \ 'L' : [':BraceyStop'             , 'stop live server'],
       \ 'm' : [':MarkdownPreview'        , 'markdown preview'],
       \ 'M' : [':MarkdownPreviewStop'    , 'markdown preview stop'],
+      \ 't' : [':VimtexCompile'          , 'TEX preview start'],
+      \ 'T' : [':VimtexStop'             , 'TEX preview stop'],
       \ 'n' : [':set nonumber!'          , 'line-numbers'],
       \ 's' : [':s/\%V\(.*\)\%V/"\1"/'   , 'surround'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
-      \ 't' : [':FloatermToggle'         , 'terminal'],
+      \ 'f' : [':FloatermToggle'         , 'terminal'],
       \ 'v' : [':Codi'                   , 'virtual repl on'],
       \ 'V' : [':Codi!'                  , 'virtual repl off'],
       \ 'w' : [':StripWhitespace'        , 'strip whitespace'],
@@ -258,6 +260,16 @@ let g:which_key_map.G = {
       \ 'P' : [':Gist -p'                          , 'post private gist '],
       \ }
 
+let g:which_key_map.i = {
+      \ 'name' : '+ipy' ,
+      \ 'c' : ['<Plug>(IPy-RunCell)'                          , 'Run Cell'],
+      \ 'a' : ['<Plug>(IPy-RunAll)'                , 'Run All'],
+      \ 'm' : [':IPython --existing mit6001.json'     , 'mit6001'],
+      \ 'j' : [':IPython --existing myjulia.json'     , 'Ijulia'],
+      \ 'v' : [':IPython --existing cvnd891.json'     , 'Vision'],
+      \ 't' : ['<Plug>(IPy-Terminate)'         , 'terminate kernel'],
+      \ }
+
 " l is for language server protocol
 let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
@@ -310,8 +322,13 @@ let g:which_key_map.t = {
       \ 'm' : [':FloatermNew lazynpm'                           , 'npm'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
       \ 't' : [':FloatermToggle'                                , 'toggle'],
-      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ 'b' : [':FloatermNew bpytop'                              , 'bpytop'],
+      \ 'B' : [':FloatermNew btm'                              , 'bottom'],
+      \ 'S' : [':FloatermNew spt'                              , 'spotify'],
+      \ 'y' : [':FloatermNew youtube-viewer'                              , 'youtube-viewer'],
+      \ 'G' : [':FloatermNew nvtop'                              , 'nvtop'],
+      \ 'c' : [':FloatermNew cmus'                              , 'cmus'],
       \ }
 
 " w is for wiki

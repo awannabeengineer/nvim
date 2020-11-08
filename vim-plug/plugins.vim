@@ -108,6 +108,39 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     " Intuitive buffer closing
     Plug 'moll/vim-bbye'
+
+
+
+
+    " additional plugins
+    " Tex and LaTeX support
+    Plug 'lervag/vimtex'
+    Plug   'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
+    " navigate neovim and tmux seemlessly
+    Plug 'christoomey/vim-tmux-navigator'
+    " julia support for Latex
+    Plug 'JuliaEditorSupport/julia-vim'
+    " Jupyter frontend for  neovim
+    Plug 'bfredl/nvim-ipy'
+    " for reading and writing jupyter .ipynb files in neovim
+    Plug 'goerz/jupytext.vim'
+    " pandoc for all sort of markdown documents
+    Plug 'vim-pandoc/vim-pandoc'
+    " pandoc sytanx highlighting
+    Plug 'vim-pandoc/vim-pandoc-syntax'
+    " Debugging
+    Plug 'puremourning/vimspector'
+    " CSV files
+    Plug 'chrisbra/csv.vim'
+    " minimap
+    Plug 'wfxr/minimap.vim'
+    " matlab
+    Plug 'daeyun/vim-matlab'
+    " skim (replacement for fzf)
+    Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+
+
+
     " Rainbow brackets
     " Plug 'luochen1990/rainbow'
     " Async Linting Engine

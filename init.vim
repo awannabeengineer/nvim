@@ -59,8 +59,16 @@ else
   " source $HOME/.config/nvim/plug-config/illuminate.vim
   " source $HOME/.config/nvim/plug-config/vista.vim
   " source $HOME/.config/nvim/plug-config/xtabline.vim
-  " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
+  source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
   " source $HOME/.config/nvim/plug-config/ale.vim
+  " additional documentation
+  source $HOME/.config/nvim/plug-config/ipy.vim
+  source $HOME/.config/nvim/plug-config/vimspector.vim
+  source $HOME/.config/nvim/plug-config/ultisnips.vim
+  source $HOME/.config/nvim/plug-config/vimtex.vim
+  source $HOME/.config/nvim/plug-config/tex-conceal.vim
+  source $HOME/.config/nvim/plug-config/jupytext.vim
+  source $HOME/.config/nvim/plug-config/matlab.vim
 endif
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
