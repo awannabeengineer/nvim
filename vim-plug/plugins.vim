@@ -5,6 +5,10 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
@@ -135,9 +139,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " minimap
     Plug 'wfxr/minimap.vim'
     " matlab
-    Plug 'daeyun/vim-matlab'
+    Plug 'daeyun/vim-matlab', { 'do': function('DoRemote') }
     " skim (replacement for fzf)
     Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+    " support for R
+    Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 
 
 
