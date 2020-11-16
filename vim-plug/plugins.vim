@@ -57,7 +57,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Themes
     Plug 'christianchiarulli/nvcode-color-schemes.vim'
     " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
     Plug 'glepnir/galaxyline.nvim'
     Plug 'kevinhwang91/rnvimr'
@@ -144,6 +145,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
     " support for R
     Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+    " javascript snippets
+    Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 
 

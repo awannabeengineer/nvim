@@ -55,3 +55,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
 cmap w!! w !sudo tee %
+" comment strings
+autocmd FileType javascript.jsx setlocal commentstring={/*\ %s\ */}
+autocmd FileType javascript.js setlocal commentstring={/*\ %s\ */}
+
