@@ -28,7 +28,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map['/'] = [ ':call Comment()'                                 , 'comment' ]
+let g:which_key_map['/'] = [ '<plug>NERDCommenterToggle'                                 , 'comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
 let g:which_key_map[';'] = [ ':Commands'                                       , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
@@ -92,6 +92,25 @@ let g:which_key_map.b = {
       \ 'n' : ['bnext'                  , 'next-buffer'],
       \ 'p' : ['bprevious'              , 'previous-buffer'],
       \ '?' : ['Buffers'                , 'fzf-buffer'],
+      \ }
+
+
+" c is for commenting
+let g:which_key_map.c = {
+      \ 'name' : '+NERDCommenter' ,
+      \ '/' : ['<plug>NERDCommenterToggle'        , 'Toggle'],
+      \ 'c' : ['<plug>NERDCommenterComment'    , 'Comment'],
+      \ 'i' : ['<plug>NERDCommenterInvert'            , 'Inverted'],
+      \ 'm' : ['<plug>NERDCommenterMinimal'                 , 'Minimal'],
+      \ 's' : ['<plug>NERDCommenterSexy'             , 'Sexy'],
+      \ 'y' : ['<plug>NERDCommenterYank'        , 'Yanked Comment'],
+      \ '$' : ['<plug>NERDCommenterToEOL'    , 'EOL'],
+      \ 'a' : ['<plug>NERDCommenterAltDelims'          , 'Alternate'],
+      \ 'A' : ['<plug>NERDCommenterAppend'             , 'Append'],
+      \ 'l' : ['<plug>NERDCommenterAlignLeft'          , 'Aligned Left'],
+      \ 'b' : ['<plug>NERDCommenterAlignBoth'   , 'Aligned Both'],
+      \ 'n' : ['<plug>NERDCommenterNested'                  , 'Nested Comment'],
+      \ 'u' : ['<plug>NERDCommenterUncomment'        , 'UnComments'],
       \ }
 
 " f is for find and replace

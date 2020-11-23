@@ -17,8 +17,8 @@
   // "diagnostic.virtualText": true, // this won't work with codelens when error on same line
 
   // codelens
-  "codeLens.enable": true,
-  "java.referencesCodeLens.enabled": true,
+  "codeLens.enable": false,
+  "java.referencesCodeLens.enabled": false,
   "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
 
   // list
@@ -46,7 +46,7 @@
   "python.linting.enabled": false,
   "python.linting.pylintEnabled": false,
   "python.formatting.provider": "black",
-  // "python.formatting.blackPath": "~/projects/neovim/envs/bin/black",
+  // "python.formatting.blackPath": "~/.local/bin/black",
   // "python.linting.pylintPath": "~/projects/neovim/envs/bin/pylint",
   // "python.condaPath": "~/miniconda3/bin/conda",
   // "python.sortImports.path": "~/projects/neovim/envs/bin/isort",

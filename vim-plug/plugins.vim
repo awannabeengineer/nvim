@@ -12,8 +12,9 @@ endfunction
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Comments
-    Plug 'tpope/vim-commentary'
+    " Nerd Commenter
+    Plug 'preservim/nerdcommenter'
+    " Plug 'tpope/vim-commentary'
     " Change dates fast
     Plug 'tpope/vim-speeddating'
     " Convert binary, hex, etc..
@@ -22,8 +23,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-repeat'
     " Text Navigation
     Plug 'unblevable/quick-scope'
-    " Useful for React Commenting 
-    Plug 'suy/vim-context-commentstring'
     " highlight all matches under cursor
     " Plug 'RRethy/vim-illuminate'
 
@@ -147,7 +146,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
     " javascript snippets
     Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
-
+    " rust support
+    " Plug 'rust-lang/rust.vim'
 
 
     " Rainbow brackets
@@ -200,13 +200,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Making stuff
     " Plug 'neomake/neomake'
     " Plug 'mhinz/vim-signify'
-    " Plug 'preservim/nerdcommenter'
     " Plug 'brooth/far.vim'
     " Plug 'atishay/far.vim'
     " Plug 'romgrk/lib.kom'
     " Plug 'brooth/far.vim'
     " Debugging
     " Plug 'puremourning/vimspector'
+    " Useful for React Commenting 
+    " Plug 'suy/vim-context-commentstring'
   endif
 
 call plug#end()

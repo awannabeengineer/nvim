@@ -27,7 +27,7 @@ else
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim
-  source $HOME/.config/nvim/plug-config/vim-commentary.vim
+  source $HOME/.config/nvim/plug-config/nerd-commenter.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
   source $HOME/.config/nvim/plug-config/better-whitespace.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
@@ -60,6 +60,7 @@ else
   " source $HOME/.config/nvim/plug-config/illuminate.vim
   " source $HOME/.config/nvim/plug-config/vista.vim
   " source $HOME/.config/nvim/plug-config/xtabline.vim
+  " source $HOME/.config/nvim/plug-config/vim-commentary.vim
   source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
   " source $HOME/.config/nvim/plug-config/ale.vim
   " additional documentation
@@ -71,6 +72,7 @@ else
   source $HOME/.config/nvim/plug-config/jupytext.vim
   source $HOME/.config/nvim/plug-config/matlab.vim
   source $HOME/.config/nvim/plug-config/julia.vim
+  " source $HOME/.config/nvim/plug-config/rust.vim
 endif
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
@@ -83,3 +85,4 @@ endif
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
+autocmd FileType .rs setlocal commentstring=/// $s
