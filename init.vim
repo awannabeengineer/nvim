@@ -9,6 +9,13 @@
 if !exists('g:vscode')
   source $HOME/.config/nvim/plug-config/polyglot.vim
 endif
+" fix color issues when inside tmux
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/functions.vim
@@ -19,13 +26,31 @@ if exists('g:vscode')
   source $HOME/.config/nvim/vscode/settings.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
   source $HOME/.config/nvim/plug-config/highlightyank.vim
+elseif exists ('g:started_by_firenvim')
+  source $HOME/.config/nvim/plug-config/firenvim.vim
+  source $HOME/.config/nvim/themes/syntax.vim
+  source $HOME/.config/nvim/themes/nvcode.vim
+  luafile $HOME/.config/nvim/lua/eviline.lua
+  source $HOME/.config/nvim/plug-config/nerd-commenter.vim
+  source $HOME/.config/nvim/plug-config/rnvimr.vim
+  source $HOME/.config/nvim/plug-config/better-whitespace.vim
+  source $HOME/.config/nvim/plug-config/fzf.vim
+  source $HOME/.config/nvim/plug-config/floaterm.vim
+  source $HOME/.config/nvim/plug-config/barbar.vim
+  source $HOME/.config/nvim/plug-config/far.vim
+  source $HOME/.config/nvim/plug-config/tagalong.vim
+  source $HOME/.config/nvim/plug-config/bracey.vim
+  source $HOME/.config/nvim/plug-config/asynctask.vim
+  source $HOME/.config/nvim/keys/which-key.vim
+  source $HOME/.config/nvim/plug-config/coc/coc.vim
+  source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 else
-
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/nvcode.vim
 
   " Plugin Configuration
+  "source $HOME/.config/nvim/plug-config/firenvim.vim
   source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/plug-config/nerd-commenter.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
@@ -35,7 +60,7 @@ else
   source $HOME/.config/nvim/plug-config/vim-wiki.vim
   " luafile $HOME/.config/nvim/lua/nvcodeline.lua
   luafile $HOME/.config/nvim/lua/eviline.lua
-  luafile $HOME/.config/nvim/lua/treesitter.lua
+  "luafile $HOME/.config/nvim/lua/treesitter.lua
   source $HOME/.config/nvim/plug-config/coc/coc.vim
   source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
@@ -72,6 +97,7 @@ else
   source $HOME/.config/nvim/plug-config/jupytext.vim
   source $HOME/.config/nvim/plug-config/matlab.vim
   source $HOME/.config/nvim/plug-config/julia.vim
+  source $HOME/.config/nvim/plug-config/calender.vim
   " source $HOME/.config/nvim/plug-config/rust.vim
 endif
 source $HOME/.config/nvim/plug-config/quickscope.vim

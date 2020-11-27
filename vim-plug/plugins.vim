@@ -45,7 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter'
-    Plug 'nvim-treesitter/playground'
+    "Plug 'nvim-treesitter/playground'
     " Cool Icons
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons'
@@ -57,7 +57,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'christianchiarulli/nvcode-color-schemes.vim'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
+     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
     Plug 'glepnir/galaxyline.nvim'
     Plug 'kevinhwang91/rnvimr'
@@ -145,7 +145,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " support for R
     Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
     " javascript snippets
-    Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+    "Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+    " calender for vim 
+    Plug 'itchyny/calendar.vim'
+    " firenvim for neovim in the browser
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
     " rust support
     " Plug 'rust-lang/rust.vim'
 

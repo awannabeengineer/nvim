@@ -46,9 +46,10 @@
   "python.linting.enabled": false,
   "python.linting.pylintEnabled": false,
   "python.formatting.provider": "black",
+  "python.analysis.diagnosticEnabled": false,
+  "python.condaPath": "/home/arash/miniconda3/bin",
   // "python.formatting.blackPath": "~/.local/bin/black",
   // "python.linting.pylintPath": "~/projects/neovim/envs/bin/pylint",
-  // "python.condaPath": "~/miniconda3/bin/conda",
   // "python.sortImports.path": "~/projects/neovim/envs/bin/isort",
   // "python.jediPath": "/home/arash/projects/neovim/envs/lib/python3.8/site-packages",
 

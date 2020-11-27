@@ -5,5 +5,5 @@ let g:nvim_ipy_perform_mappings = 0
 let g:ipy_celldef = '# %%'
 
 " key mappings
-map <silent><leader>z <Plug>(IPy-RunCell)
+"map <silent><leader>z <Plug>(IPy-RunCell)
  " au FileType py let b:ipy_celldef = ['^```{r}$', '^```$']

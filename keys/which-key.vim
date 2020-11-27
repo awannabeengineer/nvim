@@ -133,6 +133,7 @@ let g:which_key_map.k = {
       \ 'm' : [':AsyncTaskMacro'              , 'macro help'],
       \ 'o' : [':copen'                       , 'open task view'],
       \ 'r' : [':AsyncTask file-run'          , 'run file'],
+      \ 's' : [':!%:p'          , 'shebang run'],
       \ 'p' : [':AsyncTask project-run'       , 'run project'],
       \ 'x' : [':cclose'                      , 'close task view'],
       \ }
@@ -283,6 +284,7 @@ let g:which_key_map.i = {
       \ 'name' : '+ipy' ,
       \ 'c' : ['<Plug>(IPy-RunCell)'                          , 'Run Cell'],
       \ 'a' : ['<Plug>(IPy-RunAll)'                , 'Run All'],
+      \ 'k' : [':AsyncRun -mode=term -pos=bottom -rows=10  /home/arash/temp/kerneltest/coc_conda_test.sh' , 'init kernel'],
       \ 'm' : [':IPython --existing mit6001.json'     , 'mit6001'],
       \ 'j' : [':IPython --existing myjulia.json'     , 'Ijulia'],
       \ 'v' : [':IPython --existing cvnd891.json'     , 'Vision'],
