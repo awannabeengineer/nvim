@@ -5,10 +5,10 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
+
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
@@ -150,6 +150,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'itchyny/calendar.vim'
     " firenvim for neovim in the browser
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    " lspconfig just testing
+    Plug 'neovim/nvim-lspconfig'
     " rust support
     " Plug 'rust-lang/rust.vim'
 
@@ -204,6 +206,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Making stuff
     " Plug 'neomake/neomake'
     " Plug 'mhinz/vim-signify'
+    " Plug 'preservim/nerdcommenter'
     " Plug 'brooth/far.vim'
     " Plug 'atishay/far.vim'
     " Plug 'romgrk/lib.kom'

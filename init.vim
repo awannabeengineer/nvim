@@ -45,6 +45,7 @@ elseif exists ('g:started_by_firenvim')
   source $HOME/.config/nvim/plug-config/coc/coc.vim
   source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 else
+
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/nvcode.vim

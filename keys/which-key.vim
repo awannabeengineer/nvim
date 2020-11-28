@@ -2,6 +2,11 @@
 
 let @s = 'veS"'
 
+" Timeout
+let g:which_key_timeout = 100
+
+let g:which_key_display_names = {'<CR>': '↵', '<TAB>': '⇆'}
+
 " Map leader to which_key
 nnoremap <silent> <leader> :silent <c-u> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
@@ -18,6 +23,11 @@ let g:which_key_map['?'] = 'search word'
 
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
+let g:which_key_max_size = 0
+
+" let g:which_key_position = 'botright'
+" let g:which_key_position = 'topleft'
+" let g:which_key_vertical = 1
 
 " Change the colors if you want
 
@@ -32,7 +42,6 @@ let g:which_key_map['/'] = [ '<plug>NERDCommenterToggle'                        
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
 let g:which_key_map[';'] = [ ':Commands'                                       , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                                          , 'balance windows' ]
-let g:which_key_map['d'] = [ ':Bdelete'                                        , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
 let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
@@ -111,6 +120,23 @@ let g:which_key_map.c = {
       \ 'b' : ['<plug>NERDCommenterAlignBoth'   , 'Aligned Both'],
       \ 'n' : ['<plug>NERDCommenterNested'                  , 'Nested Comment'],
       \ 'u' : ['<plug>NERDCommenterUncomment'        , 'UnComments'],
+      \ }
+
+" d is for debug
+let g:which_key_map.d = {
+      \ 'name' : '+debug' ,
+      \ 'b' : ['<Plug>VimspectorToggleBreakpoint'              , 'breakpoint'],
+      \ 'B' : ['<Plug>VimspectorToggleConditionalBreakpoint'   , 'conditional breakpoint'],
+      \ 'c' : ['<Plug>VimspectorRunToCursor'                   , 'run to cursor'],
+      \ 'd' : ['<Plug>VimspectorContinue'                      , 'continue'],
+      \ 'f' : ['<Plug>VimspectorAddFunctionBreakpoint'         , 'function breakpoint'],
+      \ 'm' : [':MaximizerToggle'                              , 'maximize window'],
+      \ 'o' : ['<Plug>VimspectorStepOver'                      , 'step over'],
+      \ 'O' : ['<Plug>VimspectorStepOut'                       , 'step out'],
+      \ 'i' : ['<Plug>VimspectorStepInto'                      , 'step into'],
+      \ 'p' : ['<Plug>VimspectorPause'                         , 'pause'],
+      \ 'r' : ['<Plug>VimspectorRestart'                       , 'restart'],
+      \ 's' : ['<Plug>VimspectorStop'                          , 'stop'],
       \ }
 
 " f is for find and replace
@@ -296,7 +322,7 @@ let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
       \ '.' : [':CocConfig'                          , 'config'],
       \ ';' : ['<Plug>(coc-refactor)'                , 'refactor'],
-      \ 'a' : ['<Plug>(coc-codeaction)'              , 'line action'],
+      \ 'a' : ['<Plug>(coc-codeaction)'              , 'code action'],
       \ 'A' : ['<Plug>(coc-codeaction-selected)'     , 'selected action'],
       \ 'b' : [':CocNext'                            , 'next action'],
       \ 'B' : [':CocPrev'                            , 'prev action'],
