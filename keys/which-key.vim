@@ -149,7 +149,7 @@ let g:which_key_map.f = {
 " k is for task
 let g:which_key_map.k = {
       \ 'name' : '+task' ,
-      \ 'c' : [':AsyncTask file-compile'      , 'compile file'],
+      \ 'c' : [':AsyncTask file-build'      , 'compile file'],
       \ 'b' : [':AsyncTask project-build'     , 'build project'],
       \ 'e' : [':AsyncTaskEdit'               , 'edit local tasks'],
       \ 'f' : [':AsyncTaskFzf'                , 'find task'],
@@ -164,18 +164,6 @@ let g:which_key_map.k = {
       \ 'x' : [':cclose'                      , 'close task view'],
       \ }
       " \ 'l' : [':AsyncTaskList'               , 'list tasks'],
-
-" m is for mark
-let g:which_key_map.m = {
-      \ 'name' : '+mark' ,
-      \ 'c' : [':CocCommand bookmark.clearForCurrentFile', 'clear file'],
-      \ 'C' : [':CocCommand bookmark.clearForAllFiles', 'clear project'],
-      \ 'j' : [':CocCommand bookmark.next', 'next bookmark'],
-      \ 'k' : [':CocCommand bookmark.prev', 'prev bookmark'],
-      \ 't' : [':CocCommand bookmark.toggle', 'toggle bookmark'],
-      \ }
-      " CoC throws an error
-      " \ 'a' : [':CocCommand bookmark.annotate', 'annotate bookmark'],
 
 " " s is for search
 " let g:which_key_map.s = {
@@ -310,6 +298,7 @@ let g:which_key_map.i = {
       \ 'name' : '+ipy' ,
       \ 'c' : ['<Plug>(IPy-RunCell)'                          , 'Run Cell'],
       \ 'a' : ['<Plug>(IPy-RunAll)'                , 'Run All'],
+      \ 'r' : ['<Plug>(IPy-Run)'                , 'Run vis-line'],
       \ 'k' : [':AsyncRun -mode=term -pos=bottom -rows=10  /home/arash/temp/kerneltest/coc_conda_test.sh' , 'init kernel'],
       \ 'm' : [':IPython --existing mit6001.json'     , 'mit6001'],
       \ 'j' : [':IPython --existing myjulia.json'     , 'Ijulia'],
@@ -375,7 +364,7 @@ let g:which_key_map.t = {
       \ 'S' : [':FloatermNew spt'                              , 'spotify'],
       \ 'y' : [':FloatermNew youtube-viewer'                              , 'youtube-viewer'],
       \ 'G' : [':FloatermNew nvtop'                              , 'nvtop'],
-      \ 'c' : [':FloatermNew cmus'                              , 'cmus'],
+      \ 'c' : [':FloatermNew ms'                              , 'cmus'],
       \ }
 
 " w is for wiki

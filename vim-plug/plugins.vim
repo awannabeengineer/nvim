@@ -63,8 +63,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kevinhwang91/rnvimr'
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     Plug 'junegunn/fzf.vim'
+    Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
     " Git
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
@@ -95,16 +95,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto change html tags
     Plug 'AndrewRadev/tagalong.vim'
     " live server
-    Plug 'turbio/bracey.vim'
+    Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
     " Smooth scroll
     Plug 'psliwka/vim-smoothie'
     " " async tasks
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
+    " Markdown Preview
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
     " Swap windows
     Plug 'wesQ3/vim-windowswap'
-    " Markdown Preview
-    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
     " Easily Create Gists
     Plug 'mattn/vim-gist'
     Plug 'mattn/webapi-vim'
@@ -145,17 +145,26 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " support for R
     Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
     " javascript snippets
-    "Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+    Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
     " calender for vim 
     Plug 'itchyny/calendar.vim'
     " firenvim for neovim in the browser
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
     " lspconfig just testing
     Plug 'neovim/nvim-lspconfig'
+    " async lua
+    Plug 'ms-jpq/neovim-async-tutorial', {'branch': 'neo'}
+    " vim-go for golang support
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+    " Vim Wiki
+    Plug 'https://github.com/vimwiki/vimwiki.git'
+    " Dart
+    Plug 'dart-lang/dart-vim-plugin'
+
+
+
     " rust support
     " Plug 'rust-lang/rust.vim'
-
-
     " Rainbow brackets
     " Plug 'luochen1990/rainbow'
     " Async Linting Engine
@@ -191,8 +200,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'mg979/vim-xtabline'
     " Files
     " Plug 'tpope/vim-eunuch'
-    " Vim Wiki
-    " Plug 'https://github.com/vimwiki/vimwiki.git'
     " Better Comments
     " Plug 'jbgutierrez/vim-better-comments'
     " Echo doc

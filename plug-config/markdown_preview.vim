@@ -1,17 +1,17 @@
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
-let g:mkdp_auto_start = 0
+let g:mkdp_auto_start = 1
 
 " set to 1, the nvim will auto close current preview window when change
 " from markdown buffer to another buffer
 " default: 1
-let g:mkdp_auto_close = 0
+let g:mkdp_auto_close = 1
 
 " set to 1, the vim will refresh markdown when save the buffer or
 " leave from insert mode, default 0 is auto refresh markdown as you edit or
 " move the cursor
 " default: 0
-let g:mkdp_refresh_slow = 0
+let g:mkdp_refresh_slow = 1
 
 " set to 1, the MarkdownPreview command can be use for all files,
 " by default it can be use in markdown file
@@ -21,7 +21,7 @@ let g:mkdp_command_for_global = 0
 " set to 1, preview server available to others in your network
 " by default, the server listens on localhost (127.0.0.1)
 " default: 0
-let g:mkdp_open_to_the_world = 1
+let g:mkdp_open_to_the_world = 0
 
 " use custom IP to open preview page
 " useful when you work in remote vim and preview on local browser
@@ -65,20 +65,25 @@ let g:mkdp_preview_options = {
     \ 'hide_yaml_meta': 1,
     \ 'sequence_diagrams': {},
     \ 'flowchart_diagrams': {},
-    \ 'content_editable': v:false
+    \ 'content_editable': v:false,
+    \ 'disable_filename': 1
     \ }
 
 " use a custom markdown style must be absolute path
 " like '/Users/username/markdown.css' or expand('~/markdown.css')
-let g:mkdp_markdown_css = ''
+let g:mkdp_markdown_css = '/home/arash/.config/nvim/themes/markdown.css'
 
 " use a custom highlight style must absolute path
 " like '/Users/username/highlight.css' or expand('~/highlight.css')
 let g:mkdp_highlight_css = ''
 
 " use a custom port to start server or random for empty
-let g:mkdp_port = ''
+let g:mkdp_port = '5942'
 
 " preview page title
 " ${name} will be replace with the file name
 let g:mkdp_page_title = '「${name}」'
+
+" recognized filetypes
+" these filetypes will have MarkdownPreview... commands
+let g:mkdp_filetypes = ['markdown']

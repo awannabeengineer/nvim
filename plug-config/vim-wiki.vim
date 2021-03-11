@@ -6,7 +6,7 @@
     \   'headers': 1,
     \   'text_objs': 1,
     \   'table_format': 1,
-    \   'table_mappings': 1,
+    \   'table_mappings': 0,
     \   'lists': 1,
     \   'links': 1,
     \   'html': 1,
