@@ -117,6 +117,7 @@ else
   source $HOME/.config/nvim/plug-config/julia.vim
   source $HOME/.config/nvim/plug-config/calender.vim
   source $HOME/.config/nvim/plug-config/emmet.vim
+  source $HOME/.config/nvim/plug-config/minimap.vim
   " source $HOME/.config/nvim/plug-config/rust.vim
   luafile $HOME/.config/nvim/lua/lsp_config_sumneko.lua
   source $HOME/.config/nvim/script_practice/test_script.vim

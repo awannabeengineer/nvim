@@ -1,3 +1,8 @@
+"au filetype vimwiki silent! iunmap <buffer> <Tab>
+nmap <Leader>wl <Plug>VimwikiNextLink
+nmap <Leader>wk <Plug>VimwikiPrevLink
+" diable global
+let g:vimwiki_global_ext = 0
 " VimWiki
   let g:vimwiki_key_mappings =
     \ {
@@ -16,7 +21,7 @@
 " Filetypes enabled for
 let g:vimwiki_filetypes = ['markdown']
 
-let g:vimwiki_list = [{'path': '~/.config/nvim/wiki',
+let g:vimwiki_list = [{'path': '~/projects/notes',
                       \ 'syntax': 'markdown', 'ext': '.md', 'exclude_files': ['**/README.md', '**/Readme.md'] }]
 
 " let g:vimwiki_auto_header = 0

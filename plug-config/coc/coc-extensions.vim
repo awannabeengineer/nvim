@@ -24,7 +24,6 @@ let g:coc_global_extensions = [
   \ 'coc-xml',
   \ 'coc-yank',
   \ 'coc-json',
-  \ 'coc-julia',
   \ 'coc-clangd',
   \ 'coc-markdownlint',
   \ 'coc-sql',
@@ -32,4 +31,5 @@ let g:coc_global_extensions = [
   \ ]
   " \ 'coc-tabnine',
   " \ 'coc-highlight',
+  " \ 'coc-julia',
 

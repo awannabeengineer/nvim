@@ -157,7 +157,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " vim-go for golang support
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
     " Vim Wiki
-    Plug 'https://github.com/vimwiki/vimwiki.git'
+    Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
     " Dart
     Plug 'dart-lang/dart-vim-plugin'
 
