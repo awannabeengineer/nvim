@@ -11,3 +11,6 @@ wiki/
 pack/
 utils/java/*
 
+
+ls/lua-language-server/
+plugin/packer_compiled.vim
