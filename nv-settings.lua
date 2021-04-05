@@ -17,11 +17,11 @@ O.treesitter.ensure_installed = "all"
 O.treesitter.ignore_install = {"haskell"}
 O.treesitter.highlight.enabled = true
 O.treesitter.playground.enabled = true
-O.treesitter.rainbow.enabled = false
+O.treesitter.rainbow.enabled = true
 
 
-O.clang.diagnostics.virtual_text = false
-O.clang.diagnostics.signs = false
+O.clang.diagnostics.virtual_text = true
+O.clang.diagnostics.signs = true
 O.clang.diagnostics.underline = false
 
 -- python

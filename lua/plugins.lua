@@ -87,7 +87,7 @@ return require('packer').startup(function(use)
     use 'mattn/webapi-vim'
 
     -- Webdev
-    -- TODO add back when I learn it better 
+    -- TODO add back when I learn it better
     -- use 'gennaro-tedesco/nvim-jqx'
     -- use 'turbio/bracey.vim'
 
@@ -107,6 +107,7 @@ return require('packer').startup(function(use)
     use 'unblevable/quick-scope' -- hop may replace you
     use 'phaazon/hop.nvim'
     use 'kevinhwang91/rnvimr' -- telescope may fully replace you
+	use 'christoomey/vim-tmux-navigator'
 
     -- General Plugins
     use 'liuchengxu/vim-which-key'
@@ -130,7 +131,7 @@ return require('packer').startup(function(use)
     use 'kristijanhusak/vim-dadbod-ui'
     use 'kristijanhusak/vim-dadbod-completion'
 
-    -- Documentation Generator 
+    -- Documentation Generator
     use {'kkoomen/vim-doge', run = ':call doge#install()'}
 
     -- TODO put this back when stable for indent lines
