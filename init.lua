@@ -40,11 +40,13 @@ require('nv-bookmark')
 require('nv-dadbod')
 require('nv-doge')
 require('nv-dependency')
+require('nv-tmux')
 -- require('nv-lspinstall')
 
 -- Which Key (Hope to replace with Lua plugin someday)
 vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
+vim.cmd('source ~/.config/nvim/vimscript/paths.vim')
 
 -- LSP
 require('lsp')
