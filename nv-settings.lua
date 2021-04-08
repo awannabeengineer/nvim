@@ -20,8 +20,8 @@ O.treesitter.playground.enabled = true
 O.treesitter.rainbow.enabled = true
 
 
-O.clang.diagnostics.virtual_text = false
-O.clang.diagnostics.signs = false
+O.clang.diagnostics.virtual_text = true
+O.clang.diagnostics.signs = true
 O.clang.diagnostics.underline = false
 
 -- python
@@ -29,7 +29,7 @@ O.clang.diagnostics.underline = false
 -- add things like O.python.linter.flake8.exec_path
 -- add things like O.python.formatter.isort.exec_path
 O.python.formatter = 'yapf'
--- O.python.linter = 'flake8'
+O.python.linter = 'flake8'
 O.python.isort = true
 O.python.autoformat = true
 O.python.diagnostics.virtual_text = true
