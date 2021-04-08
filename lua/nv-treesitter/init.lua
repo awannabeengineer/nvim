@@ -1,7 +1,8 @@
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = O.treesitter.ensure_installed, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+    -- ensure_installed = O.treesitter.ensure_installed, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+    ensure_installed = {"python", "lua", "json", "java", "css", "rust", "go", "bash", "julia", "toml"}, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
     -- TODO seems to be broken
-    ignore_install = O.treesitter.ignore_install,
+    -- ignore_install = O.treesitter.ignore_install,
     highlight = {
         enable = O.treesitter.highlight.enabled -- false will disable the whole extension
     },
@@ -18,4 +19,3 @@ require'nvim-treesitter.configs'.setup {
     context_commentstring = {enable = true, config = {javascriptreact = {style_element = '{/*%s*/}'}}}
     -- refactor = {highlight_definitions = {enable = true}}
 }
-
